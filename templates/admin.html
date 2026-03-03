@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Panel</title>
+
+    </head>
+
+    <body>
+        <H1>
+            Submitted Messages
+        </H1>
+        {% if messages %}
+            {% for message in messages %}
+
+                <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+
+                    <p><strong>ID : </strong>{{message["id"]}}</p>
+                    <p><strong>Name : </strong>{{message["name"]}}</p>
+                    <p><strong>Email : </strong>{{message["email"]}}</p>
+                    <p><strong>Message : </strong>{{message["message"]}}</p>
+                </div> 
+
+
+                <a href="/delete/{{ message['id'] }}">
+    <button>Delete</button>
+</a>
+            {% endfor %}
+        {% else %}
+            <p>NO MESSAGES FOUND.</p>
+        {% endif %}
+    </body>
+</html>

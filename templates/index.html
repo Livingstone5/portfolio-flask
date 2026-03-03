@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='CSS/style.css')}}"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- CURSOR GLOW -->
+<div class="cursor-glow"></div>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <aside class="sidebar">
+    <h1>POOJA RAJ</h1>
+    <h3>Python Engineer</h3>
+    <p>I build accessible, pixel-perfect digital experiences.</p>
+
+    <nav>
+      <a href="#about" class="nav-link active">ABOUT</a>
+      <a href="#experience" class="nav-link">EXPERIENCE</a>
+      <a href="#projects" class="nav-link">PROJECTS</a>
+      <a href="#contact" class="nav-link">CONTACT ME</a>
+    </nav>
+
+    <!-- SOCIAL ICONS -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/pooja-raj007/?isSelfProfile=true" target="_blank">
+   <i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://www.github.com/Livingstone5" target="_blank">
+   <i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.instagram.com/ebeil_eniem?igsh=MWY0Znp3enl4a2U5MA==" target="_blank">
+   <i class="fab fa-instagram"></i>
+</a>
+    </div>
+  </aside>
+
+  
+
+  <!-- RIGHT -->
+  <main class="content">
+
+
+    <h2>ABOUT ME</h2><br>
+    <section id="about" class="section">
+      
+      <p>
+        I'm a growth marketer and AI automation engineer who specializes in building marketing systems that are fast to run and hard to break.
+I enjoy working at the intersection of strategy and automation — where a well-designed workflow replaces hours of manual work, and data tells you exactly where to focus next.
+      </p><br>
+      <p>
+        Currently, I'm open to new opportunities. Most recently, I was at GrowthClub, an AI-based marketing company, where I built and managed the full marketing infrastructure — webinar funnels, outreach campaigns, automation pipelines, and analytics dashboards. I also write Python and Django when the job calls for it, and I'm comfortable owning projects from idea to deployment.
+      <p>
+        Outside of work, you'll probably find me exploring new AI tools, tinkering with automation ideas, or figuring out how to make something run with one less manual step.
+      </p>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>EXPERIENCE</h2><br>
+      <div class="card">
+        <span class="date">Aug 2024 – Nov 2025</span>
+        <div>
+          
+          <h4>
+Growth Marketer & AI Automation Engineer - <i>GrowthClub · Banglore, India</i> </h4>
+          <p>Built and managed the company's marketing infrastructure end to end. Designed webinar funnels, automated outreach campaigns, and deployed AI-powered workflows that reduced manual operational tasks by 60%. Also handled website and landing page development, content strategy, and performance analytics.</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Automations</span>
+            <span>Growth Marketing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="date">Jan 2023 – Aug 2023</span>
+        <div>
+          
+          <h4> 
+Full Stack Python Django Developer - <i>One Team Solutions EdTech Pvt Ltd · Kochi, India</i> </h4>
+          <p>Worked with the engineering team to build and ship features on a live web platform. Wrote production code in Python and Django, built responsive frontends, and collaborated via Git/GitHub.</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Django </span>
+            <span>MySQL </span>
+            <span>Javascript</span>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <h2>MY PROJECTS</h2>
+    <br>
+    <section id="projects" class="section">
+      <div class="card">
+        
+        <h3>Webinar Growth Funnel </h3>
+        <p>End-to-end webinar funnel built for GrowthClub - covering outreach, landing pages, automated nurture sequences, and an A/B testing framework. Resulted in a 40% increase in registrations, 35% average 
+          attendance rate, and 22% improvement in conversions.</p>
+        <div class="tags">
+          <span>Make.com</span><br><br>
+
+          <span>N8N</span><br><br>
+          
+        </div>
+      </div>
+
+      <div class="card">
+        
+        <h3>AI Marketing Automation Suite</h3>
+        <p>A set of AI-powered workflows that automated LinkedIn content creation and personalized image generation for 
+          campaigns. Cut content production time by 70% and reduced creative asset costs by 80%.
+</p>
+        <div class="tags">
+          <span>OpenAI</span><br><br>
+            <span>API</span><br><br>
+          
+          <span>Cursor</span><br><br>
+        </div>
+      </div>
+
+      <div class="card">
+        
+        <h3>Hiring Automation System</h3>
+        <p>Built an end-to-end recruitment pipeline that automated sourcing, screening, scheduling, 
+          and onboarding. Reduced time-to-hire by 45%.</p>
+        <div class="tags">
+          
+
+          <span>N8N</span><br><br>
+          <span>Clay</span><br><br>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="section">
+  <h2>Contact Me</h2><br>
+
+  <form method="POST" action="/contact" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      
+
+     <button type="submit" class="send-btn">
+  <div class="svg-wrapper-1">
+    <div class="svg-wrapper">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path
+          fill="currentColor"
+          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+        ></path>
+      </svg>
+    </div>
+  </div>
+  <span>Send Message</span>
+</button>
+
+       
+
+  </form>
+</section>
+
+  </main>
+</div>
+
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>
